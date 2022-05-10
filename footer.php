@@ -4,7 +4,7 @@
             <div class="col-md-4 col-sm-4 col-xs-4">
                 <div class="footer-text pull-left">
                     <div class="logo d-flex">
-                    	<img src="assest\images\Scarlogo.png">
+                    	<img src="assets\images\Scarlogo.png">
                     </div>
                 </div>
                 
