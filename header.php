@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="assets\css\style.css">
 <link rel="stylesheet" type="text/css" href="assets\css\index.css">
 <link rel="stylesheet" type="text/css" href="assets\css\cars.css">
+<link rel="stylesheet" type="text/css" href="assets\css\admin.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
 
 
@@ -20,17 +21,17 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cars</a>
+          <a class="nav-link" href="cars.php">Cars</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="Services.php">Services</a>
         </li>
         
         <li class="nav-item">
-         <a class="nav-link" href="#">Login</a>
+         <a class="nav-link" href="admin_index.php">Login</a>
     	</li>
 		<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
