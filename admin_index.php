@@ -1,19 +1,16 @@
 <?php include "header.php" ?>
 
-<div class="container login">
-<form method="post" action="admin_login.php">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<div class="container">
+  <img src="assets\images\Scarlogo.png">
+<form method="POST" action="admin_login.php">
+  <div align="center">
+    <label class="form-label">Email address</label>
+    <input type="email" class="form-control" name="email">
+    <div class="form-text">We'll never share your email with anyone else.</div>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+  <div >
+    <label class="form-label">Password</label>
     <input type="password" class="form-control" name="password">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

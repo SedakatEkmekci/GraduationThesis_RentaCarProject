@@ -1,36 +1,27 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {   
 
-    $email 	= $_POST['email'];
-    $password = $_POST['password'];
-
-    sqlConnection($email,$password);
-}
-function sqlConnection($email,$password){
-	
 include("functions.php");
-
-$enteredpassword = $password;
-$sql = "SELECT * FROM admin WHERE email = '$email'";
-$do = $conn->query($sql);
+ob_start();
+session_start();
+ 
+  $umail=$_POST['umail'];
+  $pass=$_POST['pass'];
+ 
+ $sql="SELECT * FROM admin WHERE admin_mail='".$umail."'AND admin_password='".$pass."'";
 
  
-    while($result = $do->fetch_assoc()) {
-
-        $DBpassword = $result["password"];	
+if(!isset($_SESSION["login"])){
+    header("Location:admin.php");
+}
+else {
+    if($umail=="" or $pass=="") {
+        echo "<center>Please do not leave the username or password blank..!<a href=javascript:history.back(-1)>Turn Back</a></center>";
     }
-$conn->close();
+    else {
+        echo "<center>You Have Entered Incorrect Password<br><a href=javascript:history.back(-1)>Turn Back</a></center>";
+    }
 }
-ob_start();
-if(($_POST["email"]==$email) and ($_POST["password"]==$DBpassword)){
-$_SESSION["login"] = "true";
-$_SESSION["email"] = $email;
-$_SESSION["password"] = $password;
-}
-else{
-echo "Username or Password Incorrect.<br>";
-echo "You are redirected to the login page.";
-header("Refresh: 2; url=index.php");
-}
+ 
 ob_end_flush();
+
 ?>
