@@ -31,18 +31,8 @@
         </li>
         
         <li class="nav-item">
-         <a class="nav-link" href="admin_index.php">Login</a>
     	</li>
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           My Account
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Orders</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </li>
+		
       </ul>
     </div>
   </div>

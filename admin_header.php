@@ -20,17 +20,26 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
+          <a class="nav-link active" aria-current="page" href="admin_index.php">Admin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cars.php">Customers</a>
+          <a class="nav-link" href="customers.php">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Services.php">Offers</a>
+          <a class="nav-link" href="offers.php">Offers</a>
         </li>
-        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           My Account
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Orders</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
         <li class="nav-item">
-         <a class="nav-link" href="logout.php">Logout</a>
+        <a class="nav-link" href="index.php">Logout</a>
     	</li>
 	</ul>
     </div>
