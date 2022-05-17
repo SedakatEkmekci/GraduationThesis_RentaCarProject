@@ -10,10 +10,10 @@ include "admin_header.php";
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <form method="POST" action="admin_login.php">
+        <form method="POST" action="functions.php">
   <div align="center">
     <div class="container">
-         <form action = "" method = "post">
+         <form action ="functions.php" method = "post">
             <label>Username</label><br>
             <input type = "text" name = "username" required /><br><br>
             <label>Password </label><br>
