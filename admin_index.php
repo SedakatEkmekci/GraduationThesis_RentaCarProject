@@ -1,20 +1,60 @@
-<?php include "header.php" ?>
+<?php 
+include "header.php";
+include "functions.php";
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+      $sql = "SELECT id FROM admin WHERE admin_username = '$myusername' and admin_password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+    
+      if($count == 1) {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         header("location: admin.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
+?>
 
-<div class="container">
-  <img src="assets\images\Scarlogo.png">
+<div align = "center">
+         <div style = "width:300px; border: solid 1px #333333; " align = "left">
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+ 
 <form method="POST" action="admin_login.php">
   <div align="center">
-    <label class="form-label">Email address</label>
-    <input type="email" class="form-control" name="email">
-    <div class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div >
-    <label class="form-label">Password</label>
-    <input type="password" class="form-control" name="password">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
+    
+            <div style = "margin:30px">
+               
+               <form action = "" method = "post">
+                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
+                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
+                  <input type = "submit" value = " Submit "/><br />
+               </form>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+          
+            </div>
+        
+         </div>
+      
+      </div>
+ 
+  
+     
+
 
 <?php include "footer.php" ?>
 
