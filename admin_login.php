@@ -11,31 +11,27 @@ if($_SERVER['REQUEST_METHOD']=="POST")
     $result = mysqli_query($db,$sql);
 
     if(mysqli_num_rows($result)==1){
-      header("Location:admin.php");
+      header("Location:admin_index.php");
       exit();
     }
     else {
       echo "Your username and password invalid";
-         header("Location:admin_index.php");
+         header("Location:admin_login.php");
       exit();
       }
 
   }
  ?>
 
-    
- 
-</div>
-<div align="center">
-   <div class="card" style="max-width: 540px;">
-  <div class="row g-0">
+<div class="login container" align="center" >
+   <div class="card row">
     <div class="col-md-4">
       <img src="assets\images\Scarlogo.png" class="img-fluid " alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
         <form method="POST" action="">
-  <div align="center">
+ 
     <div class="container">
          <form action ="functions.php" method = "post">
             <label>Username</label><br>
@@ -45,8 +41,8 @@ if($_SERVER['REQUEST_METHOD']=="POST")
             <button class="Submit">Submit </button>
                </form>
       </div>
-    </div>
-  </div>
+   
+  
 </div>
  </div>
   </div>
