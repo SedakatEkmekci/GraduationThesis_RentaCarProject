@@ -31,6 +31,7 @@
         </li>
         
         <li class="nav-item">
+          <a class="nav-link" href="customer_registration.php">Login</a>
     	</li>
 		
       </ul>

@@ -1,9 +1,0 @@
-.cars .card{
-  background: rgba(255,255,255,.5);
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  transition: all 250ms ease-out;
-}

@@ -9,17 +9,17 @@ require('functions.php');
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         // Check user is exist in the database
-        $query    = "SELECT * FROM `admin` WHERE username='$username'
+        $query    = "SELECT * FROM `customer` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
-            header("Location: admin_index.php");
+            header("Location: customer_index.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
-                  <p class='link'>Click here to <a href='admin_login.php'>Login</a> again.</p>
+                  <p class='link'>Click here to <a href='customer_login.php'>Login</a> again.</p>
                   </div>";
         }
     } else {
@@ -29,17 +29,10 @@ require('functions.php');
         <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link"><a href="registration.php">New Registration</a></p>
+        <p class="link"><a href="customer_registeration.php">New Registration</a></p>
   </form>
 <?php
     }
     include ('footer.php');
 ?>
  
-
-  
-     
-
-
-
-

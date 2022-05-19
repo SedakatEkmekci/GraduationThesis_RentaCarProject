@@ -10,40 +10,40 @@
 
 </head>
 <body>
-		<div class="head container">
-		<div class="row">	<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="assets\images\Scarlogo.png" alt="">
-    </a>
-  </div>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="admin_index.php">Admin</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="customers.php">Customers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="offers.php">Offers</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           My Account
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Orders</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="index.php">Logout</a>
-    	</li>
-	</ul>
-    </div>
-  </div>
-</nav>
-</div>
-</div>
+   <?php 
+include ('session.php');
+?>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 height">
+                <p class="pt-5 pb-5 text-center">
+                    <a href="admin_index.php" class="text-decoration-none"><span class="text-dark text-font">Admin</span></a>
+                </p>
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="customers.php" class="text-decoration-none"><span class="text-dark">Customers</span></a>
+                </p>
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="cars_add.php" class="text-decoration-none"><span class="text-dark">Add Cars</span></a>
+                </p>
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="cars_display.php" class="text-decoration-none"><span class="text-dark">View Cars</span></a>
+                </p>
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="view_customers.php" class="text-decoration-none"><span class="text-dark">View Customer</span></a>
+                </p>                
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="display_orders.php" class="text-decoration-none"><span class="text-dark">View Orders</span></a>
+                </p>
+                <hr class="bg-dark">
+
+                       <p class="pt-5 text-center">
+                            <a href="logout.php" class="btn btn-outline-primary">Logout</a>
+                       </p>
+                  
+  
+            </div>
