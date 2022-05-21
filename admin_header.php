@@ -22,19 +22,15 @@ include ('session.php');
                 </p>
                 <hr class="bg-dark ">
                 <p class="pt-2 pb-2 text-center">
-                    <a href="customers.php" class="text-decoration-none"><span class="text-dark">Customers</span></a>
-                </p>
-                <hr class="bg-dark ">
-                   <p class="pt-2 pb-2 text-center">
-                    <a href="view_customers.php" class="text-decoration-none"><span class="text-dark">View Customer</span></a>
-                </p>  
-                <hr class="bg-dark ">
-                <p class="pt-2 pb-2 text-center">
-                    <a href="add_cars.php" class="text-decoration-none"><span class="text-dark">Add Cars</span></a>
+                    <a href="messages.php" class="text-decoration-none"><span class="text-dark">Messages</span></a>
                 </p>
                 <hr class="bg-dark ">
                 <p class="pt-2 pb-2 text-center">
-                    <a href="cars_display.php" class="text-decoration-none"><span class="text-dark">View Cars</span></a>
+                    <a href="add_car.php" class="text-decoration-none"><span class="text-dark">Add Cars</span></a>
+                </p>
+                <hr class="bg-dark ">
+                <p class="pt-2 pb-2 text-center">
+                    <a href="view_cars.php" class="text-decoration-none"><span class="text-dark">View Cars</span></a>
                 </p>
                 <hr class="bg-dark ">
                 <p class="pt-2 pb-2 text-center">

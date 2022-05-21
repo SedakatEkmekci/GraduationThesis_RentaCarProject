@@ -6,6 +6,9 @@
 <link rel="stylesheet" type="text/css" href="assets\css\index.css">
 <link rel="stylesheet" type="text/css" href="assets\css\cars.css">
 <link rel="stylesheet" type="text/css" href="assets\css\admin.css">
+<link rel="stylesheet" type="text/css" href="assets\css\slider.css">
+<link rel="stylesheet" type="text/css" href="assets\css\contact.css">
+
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
 
 
@@ -27,11 +30,11 @@
           <a class="nav-link" href="cars.php">Cars</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Services.php">Services</a>
+          <a class="nav-link" href="Contact.php">Contact</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="customer_registration.php">Login</a>
+          <a class="nav-link" href="customer_login.php">Login</a>
     	</li>
 		
       </ul>

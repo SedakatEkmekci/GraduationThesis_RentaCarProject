@@ -1,0 +1,14 @@
+.car_view img{
+	width: 50%;
+}
+.car_view thead{
+	text-align: center;
+}
+.car_view  tr{
+	vertical-align: middle;
+	text-align: center;
+}
+.car_view .delete-btn {
+	background: none;
+	border: 1px solid #000000;
+}
