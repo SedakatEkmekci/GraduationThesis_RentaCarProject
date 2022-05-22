@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="assets\css\customer.css">
 <link rel="stylesheet" type="text/css" href="assets\css\cars.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 
 </head>
@@ -15,43 +15,31 @@
   <?php 
 include ('session.php');
 ?>
-<section class="header-main border-bottom ">
-	<div class="container-fluid">
-       <div class="row p-2 pt-3 pb-3 d-flex align-items-center">
-           <div class="col-md-2">
-               <img  class="d-none d-md-flex" src="assets\images\Scarlogo.png" alt="" width="100">
-           </div>
-           <div class="col-md-8">
-        <div class="d-flex form-inputs">
-        <input class="form-control" type="text" placeholder="Search any product...">
-        <i class="bx bx-search"></i>
-        </div>
-           </div>
-       </div>
-	</div> 
-</section>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand d-md-none d-md-flex" href="#">Categories</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="head container">
+    <div class="row"> <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets\images\Scarlogo.png" alt="">
+    </a>
+  </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Cars</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prices</a>
+          <a class="nav-link" href="cars.php">View Cars</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        
-        
-          </ul>
-    </div>
+       <li class="nav-item dropdown dropbtn" onclick="myFunction()">Account
+      <i class="fa fa-caret-down"></i>
+      <div class="dropdown-content" id="myDropdown">
+    <a href="#">Cart</a>
+    <a href="#">Cars</a>
+    <a href="#">Settings</a>
   </div>
-</nav>
-</header>
+</li>
+</ul>
+    </div>
+ </div>
+</div>

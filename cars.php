@@ -11,7 +11,10 @@ include "functions.php";
       <div class="container car_view">
             <div class="card mt-2 mx-auto p-4 bg-light">
             <div class="card-body bg-light">
-               <table class="table">
+                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+           
+             
+               <table class="table" id="myTable">
   <thead>
     <tr>
       <th scope="col">#</th>

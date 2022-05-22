@@ -51,7 +51,44 @@
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-
+ <!-- Search and Boxes -->
+ <div class="container main-content">
+  <div class="row">
+        
+        <div class="col-md-4 mt-2">
+            
+            <div class="card input-box">
+                <img src="https://i.imgur.com/Zzcgjbk.png" width="70">
+                <h5 class="mb-0">Prismos</h5>
+                <span class="score">5 Diamonds</span>
+                <p>All above score is used in the games and apps</p>
+            </div>
+            
+        </div>
+        
+        <div class="col-md-4 mt-2">
+            <div class="card input-box">
+                <img src="https://i.imgur.com/Zzcgjbk.png" width="90">
+                <h5 class="mb-0">Srismos</h5>
+                <span class="score">10 Diamonds</span>
+                <p>All above score is used in the games and apps</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mt-2">
+            
+            <div class="card input-box">
+                <img src="https://i.imgur.com/Zzcgjbk.png" width="70">
+                <h5 class="mb-0">Trismos</h5>
+                <span class="score">8 Diamonds</span>
+                <p>All above score is used in the games and apps</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
 
  
 
