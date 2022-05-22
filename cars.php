@@ -42,7 +42,7 @@ include "functions.php";
       <td><?=$car['car_brand']?></td>
       <td><?=$car['car_price']?></td>
       <td><?=$car['car_detail']?></td>
-      <td><button type="submit" class="delete-btn">Add</button></td>
+      <td><button type="submit" class="delete-btn">Go details</button></td>
     
    </tr> 
  
