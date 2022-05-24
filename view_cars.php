@@ -50,5 +50,8 @@ include "delete_car.php";
     </tbody>
 </table>
 
-</div></div></div>
+</div></div>
+
+ 
+</div>
  

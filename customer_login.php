@@ -16,6 +16,8 @@ require('functions.php');
         $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
+            $value = mysqli_fetch_assoc($result);
+            $_SESSION['id'] = $value['id'];
             $_SESSION['username'] = $username;
             header("Location: customer_index.php");
         } else {

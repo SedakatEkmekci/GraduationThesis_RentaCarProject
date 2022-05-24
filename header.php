@@ -10,6 +10,9 @@
 <link rel="stylesheet" type="text/css" href="assets\css\contact.css">
 
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css.map">
+<link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.css.map">
+
 
 
 </head>
