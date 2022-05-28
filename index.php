@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+<?php include "header.php";
+    
+?>
 <!-- Top Section -->
 <div class="container top-section">
   <div class="container titles">
@@ -11,39 +13,39 @@
 <!-- Full-width images with number text -->
 <div class="mySlides">
  
-    <img src="uploads\IMG-6288c6c4b05277.18030674.png" style="width:100%">
+    <img src="uploads\IMG-6288c6c4b05277.18030674.png">
 </div>
 
 <div class="mySlides">
   
-    <img src="uploads\IMG-6288c6edc22697.85589273.png" style="width:100%">
+    <img src="uploads\IMG-6288c6edc22697.85589273.png">
 </div>
 
 <div class="mySlides">
   
-    <img src="uploads\IMG-6288c53c952714.60961658.png" style="width:100%">
+    <img src="uploads\IMG-6288c53c952714.60961658.png">
 </div>
 
 <div class="mySlides">
   
-    <img src="uploads\IMG-6288c651dea5c4.67977381.png" style="width:100%">
+    <img src="uploads\IMG-6288c651dea5c4.67977381.png">
 </div>
 
 <div class="mySlides">
  
-    <img src="uploads\IMG-6288c651dea5c4.67977381.png" style="width:100%">
+    <img src="uploads\IMG-6288c651dea5c4.67977381.png">
 </div>
 
 <div class="mySlides">
 
-    <img src="uploads\IMG-6288c67836d363.58525416.png" style="width:100%">
+    <img src="uploads\IMG-6288c67836d363.58525416.png">
 </div>
 <div class="mySlides">
  
-    <img src="uploads\IMG-6288c72085a622.32107065.png" style="width:100%">
+    <img src="uploads\IMG-6288c72085a622.32107065.png">
 </div>
 <div class="mySlides">
-    <img src="uploads\IMG-6288c697325135.41719849.png" style="width:100%">
+    <img src="uploads\IMG-6288c697325135.41719849.png">
 </div>
 
 <!-- Next and previous buttons -->

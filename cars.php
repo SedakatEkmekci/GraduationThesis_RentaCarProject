@@ -2,38 +2,28 @@
 include "header.php";
 include "functions.php"; 
 
-?>
-<?php 
           $sql = "SELECT * FROM cars ORDER BY id DESC";
           $res = mysqli_query($conn, $sql);
 ?>
 
+<!-- Modal for customer Login -->
       <div class="container car_view">
         <div class="modal fade" id="viewmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> View Student Data </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLabel"> Login </h5>
                 </div>
+                <form class="form" method="post" name="login">
+        
+        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <input type="submit" value="Login" name="submit" class="login-button"/>
+        <p class="link"><a href="registration.php">New Registration</a></p>
+  </form>
 
-                <form action="deletecode.php" method="POST">
-
-                    <div class="modal-body">
-
-                        <input type="text" name="view_id" id="view_id">
-
-                        <!-- <p id="fname"> </p> -->
-                        <h4 id="fname"> <?php echo ''; ?> </h4>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> CLOSE </button>
-                        <!-- <button type="submit" name="deletedata" class="btn btn-primary"> Yes !! Delete it. </button> -->
-                    </div>
-                </form>
+                
 
             </div>
         </div>
@@ -72,7 +62,18 @@ include "functions.php";
       <td><?=$car['car_name']?></td>
       <td><?=$car['car_brand']?></td>
       <td><?=$car['car_price']?></td>
-      <td> <button type="button" class="btn btn-info viewbtn"> VIEW </button></td>
+      <?php 
+        if($_SESSION['id']>0){ 
+          ?>
+          <td> <button type="button" class="btn btn-info viewbtn"> VIEW </button></td>
+          <?php
+              } 
+      else {
+        ?>
+        <td>Please Login for show detail</td>
+        <?php
+       }
+      ?>
     
    </tr> 
  
