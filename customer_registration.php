@@ -1,6 +1,5 @@
 <?php 
 include ('header.php');
-  require('functions.php');
     // When form submitted, insert values into the database.
     if (isset($_REQUEST['username'])) {
         // removes backslashes

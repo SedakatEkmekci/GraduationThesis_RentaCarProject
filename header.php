@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="assets\css\admin.css">
 <link rel="stylesheet" type="text/css" href="assets\css\slider.css">
 <link rel="stylesheet" type="text/css" href="assets\css\contact.css">
-
+<link rel="stylesheet" type="text/css" href="assets\css\customer.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css.map">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.css.map">
@@ -17,6 +18,9 @@
 
 </head>
 <body>
+<?php 
+  require "functions.php";
+?>
 	<div class="head container">
 		<div class="row">	<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
@@ -35,10 +39,29 @@
         <li class="nav-item">
           <a class="nav-link" href="Contact.php">Contact</a>
         </li>
-        
-        <li class="nav-item">
+        <?php 
+        if($_SESSION['id']>0){  //If the customer is logged in they see dropdown menu in header
+          ?>
+     <li class="nav-item dropdown dropbtn" onclick="myFunction()">Account
+        <div class="dropdown-content" id="myDropdown">
+        <a href="#">My Account</a>
+        <a href="#">Orders</a>
+        <a href="#">Settings</a>
+      </div>
+      </li>
+      
+       
+          <?php
+              } 
+      else {
+        ?>
+         <li class="nav-item">
           <a class="nav-link" href="customer_login.php">Login</a>
     	</li>
+        <?php
+       }
+      ?>
+       
 		
       </ul>
     </div>

@@ -1,6 +1,5 @@
 <?php 
 include "admin_header.php";
-include "functions.php"; 
 include "delete_car.php";
 ?>
 

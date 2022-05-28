@@ -1,6 +1,5 @@
 <?php 
 include ('header.php');
-require('functions.php');
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
@@ -18,7 +17,7 @@ require('functions.php');
             $value = mysqli_fetch_assoc($result);
             $_SESSION['id'] = $value['id'];
             $_SESSION['username'] = $username;
-            header("Location: customer_index.php");
+            header("Location: cars.php"); //Redirects to cars.php when customer logs in
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
