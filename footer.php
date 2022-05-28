@@ -44,14 +44,31 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="assets\js\bootstrap\bootstrap.min.js"></script>
-<script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="assets\js\bootstrap\bootstrap.min.js.map"></script>
-<script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js.map"></script>
 <script type="text/javascript" src="assets\js\jquery\jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js.map"></script>
 <script type="text/javascript" src="assets\js\slider.js"></script>
 <script type="text/javascript" src="assets\js\search.js"></script>
-
 <script type="text/javascript" src="assets\js\dropdown.js"></script>
+
+<!-- Script for Modals --> 
+<script>console.log('test');
+  jQuery(document).ready(function($){
+    console.log('test');
+$('.viewbtn').on('click', function () {
+    console.log('test');
+                $('#viewmodal').modal('show');
+                $.ajax({ //create an ajax request to display.php
+                    type: "GET",
+                    url: "display.php",
+                    dataType: "html", //expect html to be returned                
+                    success: function (response) {
+                        $("#responsecontainer").html(response);
+                    }
+                });
+            });
+});
+       
+</script>
 </body>
 </html>

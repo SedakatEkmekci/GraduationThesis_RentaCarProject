@@ -83,20 +83,6 @@ include "functions.php";
 
 </div></div>
 
-<script>
-        $(document).ready(function () {
-            $('.viewbtn').on('click', function () {
-                $('#viewmodal').modal('show');
-                $.ajax({ //create an ajax request to display.php
-                    type: "GET",
-                    url: "display.php",
-                    dataType: "html", //expect html to be returned                
-                    success: function (response) {
-                        $("#responsecontainer").html(response);
-                    }
-                });
-            });
 
-        });
-</script>
 </div>
+<?php include "footer.php"; ?>
