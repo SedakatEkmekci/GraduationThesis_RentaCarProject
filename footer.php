@@ -82,24 +82,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script> 
-<!-- Script for Modals --> 
-<script>console.log('test');
-  jQuery(document).ready(function($){
-    console.log('test');
-$('.viewbtn').on('click', function () {
-    console.log('test');
-                $('#viewmodal').modal('show');
-                $.ajax({ //create an ajax request to display.php
-                    type: "GET",
-                    url: "display.php",
-                    dataType: "html", //expect html to be returned                
-                    success: function (response) {
-                        $("#responsecontainer").html(response);
-                    }
-                });
-            });
-});
-       
-</script>
+
 </body>
 </html>
