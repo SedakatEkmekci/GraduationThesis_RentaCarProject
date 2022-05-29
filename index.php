@@ -7,51 +7,67 @@
     <h1>S Cars Rental</h1>
     <p>Easy, Fast and Reliable car rental.</p>
 </div>
-  <!-- Container for the image gallery -->
-  <div class="container gallery">
-
-<!-- Full-width images with number text -->
-<div class="mySlides">
- 
-    <img src="uploads\IMG-6288c6c4b05277.18030674.png">
-</div>
-
-<div class="mySlides">
-  
-    <img src="uploads\IMG-6288c6edc22697.85589273.png">
-</div>
-
-<div class="mySlides">
-  
-    <img src="uploads\IMG-6288c53c952714.60961658.png">
-</div>
-
-<div class="mySlides">
-  
-    <img src="uploads\IMG-6288c651dea5c4.67977381.png">
-</div>
-
-<div class="mySlides">
- 
-    <img src="uploads\IMG-6288c651dea5c4.67977381.png">
-</div>
-
-<div class="mySlides">
-
-    <img src="uploads\IMG-6288c67836d363.58525416.png">
-</div>
-<div class="mySlides">
- 
-    <img src="uploads\IMG-6288c72085a622.32107065.png">
-</div>
-<div class="mySlides">
-    <img src="uploads\IMG-6288c697325135.41719849.png">
-</div>
-
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+  <div class="car_gallery">
+  <div class="container">
+        <div class="row">
+            <div class="col">
+               <div class="car_gallery_main_container">
+                
+                    <div class="bbb_viewed_nav_container">
+                        <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="bbb_viewed_nav bbb_viewed_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                <div class="bbb_viewed_slider_container">
+                    <div class="owl-carousel owl-theme bbb_viewed_slider">
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="uploads\IMG-6288c6c4b05277.18030674.png"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image">
+                                    <img src="uploads\IMG-6288c6edc22697.85589273.png"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image">
+                                    <img src="uploads\IMG-6288c53c952714.60961658.png"></div>
+                               
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image">
+                                    <img src="uploads\IMG-6288c651dea5c4.67977381.png"></div>
+                               
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image">    
+                                    <img src="uploads\IMG-6288c67836d363.58525416.png"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"> 
+                                    <img src="uploads\IMG-6288c72085a622.32107065.png">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div> 
+            </div>
+        </div>
+    </div>
 </div>
  <!-- Search and Boxes -->
  <div class="container main-content">

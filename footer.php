@@ -47,12 +47,76 @@
 <script type="text/javascript" src="assets\js\jquery\jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js.map"></script>
 <script type="text/javascript" src="assets\js\bootstrap\bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<script>
+    /*Script For Carousel */
+    $(document).ready(function()
+{
+
+   
+        if($('.bbb_viewed_slider').length)
+        {
+            var viewedSlider = $('.bbb_viewed_slider');
+
+            viewedSlider.owlCarousel(
+            {
+                loop:true,
+                margin:30,
+                autoplay:true,
+                autoplayTimeout:6000,
+                nav:false,
+                dots:false,
+                responsive:
+                {
+                    0:{items:1},
+                    575:{items:2},
+                    768:{items:3},
+                    991:{items:4},
+                    1199:{items:6}
+                }
+            });
+
+            if($('.bbb_viewed_prev').length)
+            {
+                var prev = $('.bbb_viewed_prev');
+                prev.on('click', function()
+                {
+                    viewedSlider.trigger('prev.owl.carousel');
+                });
+            }
+
+            if($('.bbb_viewed_next').length)
+            {
+                var next = $('.bbb_viewed_next');
+                next.on('click', function()
+                {
+                    viewedSlider.trigger('next.owl.carousel');
+                });
+            }
+        }
 
 
-<script type="text/javascript" src="assets\js\search.js"></script>
-<script type="text/javascript" src="assets\js\dropdown.js"></script>
-<!-- Script For Carousel -->
-<script>let slideIndex = 1;
+    });
+/* Script For Dropdown */
+
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+/* Script For Carousel*/ 
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls

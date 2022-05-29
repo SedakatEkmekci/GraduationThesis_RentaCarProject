@@ -6,14 +6,14 @@
 <link rel="stylesheet" type="text/css" href="assets\css\index.css">
 <link rel="stylesheet" type="text/css" href="assets\css\cars.css">
 <link rel="stylesheet" type="text/css" href="assets\css\admin.css">
-<link rel="stylesheet" type="text/css" href="assets\css\slider.css">
 <link rel="stylesheet" type="text/css" href="assets\css\contact.css">
 <link rel="stylesheet" type="text/css" href="assets\css\customer.css">
 <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css.map">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.css.map">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
 
 </head>
