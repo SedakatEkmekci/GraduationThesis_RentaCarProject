@@ -5,8 +5,12 @@ include "header.php";
           $res = mysqli_query($conn, $sql);
 
         
-    if(isset($_POST['car_id'])){
-      echo $_POST['car_id'];
+    if(isset($_POST['deleted_car_id']))
+    {
+        $_sql = "DELETE FROM cars WHERE id = '".$_POST['deleted_car_id']."'";
+        mysqli_query($conn, $_sql);
+        mysqli_close($conn);
+        header("location: cars.php");
     }
 
 ?>
@@ -57,6 +61,11 @@ include "header.php";
                         <form action="BuyCar.php" method="POST">
                             <input type="hidden" name="car_id" value="<?php echo $car['id'] ?>">
                             <button type="submit" name="Buy" class="btn btn-info viewbtn"> BUY </button>
+                        </form>
+                        <br>
+                        <form method="POST">
+                            <input type="hidden" name="deleted_car_id" value="<?php echo $car['id'] ?>">
+                            <button type="submit" name="Delete" class="btn btn-danger viewbtn"> Delete </button>
                         </form>
                         </td>
                         <?php

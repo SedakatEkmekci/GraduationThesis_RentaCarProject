@@ -1,26 +1,33 @@
 <?php 
 include 'header.php';
 
-
 if (isset($_POST['car_id'])) {
-	echo $_POST['car_id'];
+	$_SESSION['car_id'] = $_POST['car_id'];
     echo $_SESSION['id'];
 
 
-
-    $sql = "INSERT INTO orders (renter_name,renter_tcid,location,pickup_date,return_date)
-                VALUES ('$renter_name','$renter_tcid','$location','$pickup_date','$returnDate')";
-                mysqli_query($conn, $sql);
-                header("Location: BuyCar.php");
 }
 if(isset($_POST['submit']))
 {
+
+    $timestamp = strtotime($_POST['pickup_date']);
+    $date_formated = date('Y-m-d H:i:s', $timestamp);
+    $return_timestamp = strtotime($_POST['return_date']);
+    $return_date_formated = date('Y-m-d H:i:s', $timestamp);
     $tc = $_POST['TC'];
-   
+    $renter_name = $_POST['renter_name'];
+     $location = $_POST['location'];
+     $car_id = $_SESSION['car_id'];
+     $id = $_SESSION['id'];
+
+     $sql = "INSERT INTO orders(customer_id,car_id,renter_name,renter_tcid,location,pickup_date,return_date)
+     VALUES ('$id','$car_id','$renter_name','$tc','$location','$date_formated','$return_date_formated')";
+     mysqli_query($conn, $sql);
+     mysqli_close($conn);
 }
 ?>
 <div class="container-fluid  order_form">
-    <form class="row g-4 needs-validation" novalidate>
+    <form class="row g-4 needs-validation" novalidate method="post">
         <div class="col-md-8">
             <label for="validationCustom01" class="form-label">Name and Surname</label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="Name and Surname"
@@ -47,7 +54,7 @@ if(isset($_POST['submit']))
 
         <div class="col-md-9">
             <label for="validationCustom04" class="form-label">Pick up Location</label>
-            <select class="form-select" id="validationCustom04" name="location"required>
+            <select class="form-select" id="validationCustom04" name="location" required>
                 <option value="">Choose...</option>
                 <option value="1">Adana</option>
                 <option value="2">Adıyaman</option>
@@ -139,14 +146,14 @@ if(isset($_POST['submit']))
         </div>
         <div class="col-md-6">
             <label for="validationCustom05" class="form-label">Pick up Date</label>
-            <input type="datetime-local" class="form-control" id="validationCustom05" name="pickup_date" required>
+            <input type="datetime-local" class="form-control" id="validationCustom05" date('Y-m-d H:i:s') name="pickup_date" required>
             <div class="invalid-feedback">
                 Looks good!
             </div>
         </div>
         <div class="col-md-6">
             <label for="validationCustom06" class="form-label">Return Date</label>
-            <input type="datetime-local" class="form-control" id="validationCustom06" name="return_date" required>
+            <input type="datetime-local" class="form-control" id="validationCustom06" date('Y-m-d H:i:s') name="return_date" required>
             <div class="invalid-feedback">
                 Looks good!
             </div>
