@@ -51,30 +51,33 @@
         </div>
     </div>
 </div>
-<!-- Image Card -->
-<div class="container image-box">
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="assets\images\cars-gallery.jpg" class="img-fluid rounded-start" alt="...">
+<!-- Testimonial -->
+<div class="testimonial_section container mt-5">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="testimonial rounded"><img class="mb-3" src="https://i.imgur.com/ECXzJ1k.png" width="40">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+                    <div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/sKDeBrg.jpg" width="40">
+                        <div class="ml-2 about"><span class="d-block name"> Giralle Cross</span></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">What should I pay attention to when renting a car?</h5>
-                    <p class="card-text">We have listed the points you should pay attention to when renting a car through Scars.</p>
-                    <ul class="card-text">
-                        <li>Compare and examine the vehicle alternatives of different companies in detail.</li>
-                        <li>Choose from the tools that fit your needs. For example, if you have a large number of suitcases, make sure that the luggage volume of the vehicle you are renting is large.</li>
-                        <li>Check the address of the place where you will pick up and deliver the car you rented. You can consider the alternative of delivering the vehicle at a different location than the one you received it from.</li>
-                        <li>Some companies can deliver the car you will rent to your address. You can benefit from companies that provide this service.</li>
-                        <li>Remember that at least 2 years must pass from the date you got your license to rent a car.</li>
-                        <li>Make sure that you meet the necessary conditions for the vehicle you will rent.</li>
-                        <li>Read the terms of use carefully when renting a car.</li>
-                        <li>When taking delivery of your vehicle, carefully examine the insurance and contract, and check the vehicle's exterior and interior before taking delivery of the vehicle.</li>
-                    </ul>
+            <div class="col-md-4">
+                <div class="testimonial rounded"><img class="mb-3" src="https://i.imgur.com/OEJ9eQF.png" width="40">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+                    <div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/aZ9cakV.jpg" width="40">
+                        <div class="ml-2 about"><span class="d-block name"> Sam Cross</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial  rounded"><img class="mb-3" src="https://i.imgur.com/ECXzJ1k.png" width="40">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+                    <div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/LP0U10y.jpg" width="40">
+                        <div class="ml-2 about"><span class="d-block name"> Marry Cross</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 <?php include "footer.php"; ?>
