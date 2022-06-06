@@ -1,5 +1,7 @@
 <?php 
+include ('functions.php');
 include('admin_header.php');
+
 ?>
 <!-- alert -->
 <div class="col-sm-10">

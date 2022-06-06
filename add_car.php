@@ -1,6 +1,7 @@
 <?php 
+include ('functions.php');
 include('admin_header.php');
-include_once 'functions.php';
+
 if(isset($_POST['submit']))
 {    
      $name = $_POST['name'];

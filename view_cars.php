@@ -1,14 +1,10 @@
 <?php 
-include "admin_header.php";
 include "delete_car.php";
+
+$sql = "SELECT * FROM cars ORDER BY id DESC";
+$res = $conn->query($sql)
+
 ?>
-
-  
-     <?php 
-          $sql = "SELECT * FROM cars ORDER BY id DESC";
-          $res = mysqli_query($conn,  $sql);
-      ?>
-
       <div class="col-sm-10 car_view">
             <div class="card mt-2 mx-auto p-4 bg-light">
             <div class="card-body bg-light">
@@ -28,10 +24,8 @@ include "delete_car.php";
     
   <?php 
 
-          if (mysqli_num_rows($res) > 0) {
+          if ($res->num_rows > 0) {
             while ($car = mysqli_fetch_assoc($res)) {  
-
-  
 ?>
   <tr>
       <th scope="row"><?=$car['id']?></th>
