@@ -17,40 +17,6 @@
         </div>
     </div>
 </div>
-
-<!-- İcon Boxes -->
-<div class="container icon-box">
-<div class="container mt-4 d-flex justify-content-center">
-    <div class="row g-3">
-        <div class="col-md-4 ">
-            <div class="cards">
-                <div class="first bg-white p-4 text-center">
-
-                    <h5>Catch the best deals</h5>
-                    <p class="line1">We list the most suitable vehicles for you among dozens of vehicles.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="cards">
-                <div class=" second bg-white p-4 text-center">
-                    <i class="fa-solid fa-comments"></i>
-                    <h5>Contact Us</h5>
-                    <p class="line2">You can reach us via our website whenever and wherever you want.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="cards">
-                <div class=" third bg-white p-4 text-center">
-                    <i class="fa-solid fa-cars"></i>
-                    <h5>Anytime Anywhere You Want</h5>
-                    <p class="line3">You can get your vehicle from any location whenever you want.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Testimonial -->
 <div class="testimonial_section container mt-5">
         <div class="row">

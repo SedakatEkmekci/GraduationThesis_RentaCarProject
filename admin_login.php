@@ -1,6 +1,6 @@
 <?php 
 include ('header.php');
-require('functions.php');
+
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
@@ -28,7 +28,7 @@ require('functions.php');
         <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
-        <p class="link"><a href="registration.php">New Registration</a></p>
+        <p class="link"><a href="admin_registration.php">New Registration</a></p>
   </form>
 <?php
     }
