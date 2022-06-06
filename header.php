@@ -44,8 +44,7 @@
           ?>
      <li class="nav-item dropdown dropbtn" onclick="myFunction()">Account
         <div class="dropdown-content" id="myDropdown">
-        <a href="#">My Account</a>
-        <a href="#">Orders</a>
+        <a href="orders.php">Orders</a>
         <a href="#">Settings</a>
       </div>
       </li>

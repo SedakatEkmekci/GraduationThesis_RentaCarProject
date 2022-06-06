@@ -1,12 +1,11 @@
 <?php include "header.php";?>
 <?php 
-          $sql = "SELECT * FROM messages ORDER BY id DESC";
+          $sql = "SELECT * FROM orders ORDER BY id DESC";
           $res = mysqli_query($conn,  $sql);
       ?>
 
-      <div class="col-sm-10 message_view">
-            <div class="messaged mt-2 mx-auto p-4 bg-light">
-            <div class="messaged-body bg-light">
+      <div class="container order_view bg-light">
+          
                <table class="table">
   <thead>
     <tr>
@@ -30,11 +29,11 @@
 ?>
   <tr>
       <th scope="row"><?=$order['id']?></th>
-      <td><?=$order['Renter Name']?></td>
-      <td><?=$order['Renter TC']?></td>
+      <td><?=$order['renter_name']?></td>
+      <td><?=$order['renter_tcid']?></td>
       <td><?=$order['location']?></td>
-      <td><?=$order['Pick-up Date']?></td>
-      <td><?=$order['Order Date']?></td>
+      <td><?=$order['pickup_date']?></td>
+      <td><?=$order['return_date']?></td>
     
    </tr> 
  
@@ -43,6 +42,6 @@
     </tbody>
 </table>
 
-</div></div></div>
+</div>
  
 <?php include "footer.php"; ?>

@@ -18,3 +18,10 @@
     right: 10px;
     top: 15px;
 }
+
+
+/*Orders */
+
+.order_view thead {
+    text-align: center;
+}

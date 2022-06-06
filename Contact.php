@@ -6,40 +6,40 @@
     <h1>Contact Us</h1>
     <p>Contact us to get more information</p>
 </div>
-<div class="container contact">
+<div class="container contact_view">
   <div class="row">
       <div class="col-md-12">
-        <div class="well well-sm">
+        <div class="contact-us">
           <form class="form-horizontal" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
           <fieldset>    
-            <!-- Name input-->
+           <!-- Name input -->
             <div class="form-group">
               <label class="col-md-3 control-label" for="name" >Name</label>
-              <div class="col-md-9">
+             
                 <input required="true" id="name" name="name" type="text" placeholder="Your Name" class="form-control">
-              </div>
+             
             </div>
     
-            <!-- Email input-->
+            <!-- Email input -->
             <div class="form-group">
               <label class="col-md-3 control-label" for="email">E-mail</label>
-              <div class="col-md-9">
+              
                 <input required="true" id="email" name="email" type="text" placeholder="Your E-mail Address" class="form-control">
-              </div>
+              
             </div>
     
-            <!-- Message body -->
+          <!-- Message body -->
             <div class="form-group">
               <label class="col-md-3 control-label" for="message">Message</label>
-              <div class="col-md-9">
+              
                 <textarea required="true" class="form-control" id="message" name="message" placeholder="Your Message" rows="5"></textarea>
-              </div>
+            
             </div>
     
-            <!-- Form actions -->
+         <!-- Form actions -->
             <div class="form-group">
               <div class="col-md-12 text-left"><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <button type="submit" class="btn btn-primary btn-lg" >Contact Us!</button>
+                <button type="submit" class="btn btn-primary btn-md" >Contact Us!</button> 
 <?php 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   // post metoduyla verileri alıyoruz.
