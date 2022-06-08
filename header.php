@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.min.css.map">
 <link rel="stylesheet" type="text/css" href="assets\css\bootstrap\bootstrap.css.map">
-<link rel="stylesheet" type="text/css" href="assets\css\fontawesome\fontawesome.css">
+<link rel="stylesheet" type="text/css" href="assets\css\fontawesome\fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
@@ -21,7 +21,7 @@
 <?php 
   require "functions.php";
 ?>
-	<div class="head container">
+	<div class="topnav container">
 		<div class="row">	<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand" href="#">
@@ -47,6 +47,11 @@
         <a href="orders.php">Orders</a>
         <a href="#">Settings</a>
       </div>
+      </li>
+      <li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
       </li>
       
        
