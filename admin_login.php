@@ -1,11 +1,11 @@
-<?php 
-include ('header.php');
-
+    <?php 
+    include ('header.php');
+    
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
-        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = stripslashes($_POST['username']);    // removes backslashes
         $username = mysqli_real_escape_string($conn, $username);
-        $password = stripslashes($_REQUEST['password']);
+        $password = stripslashes($_POST['password']);
         $password = mysqli_real_escape_string($conn, $password);
         // Check user is exist in the database
         $query    = "SELECT * FROM `admin` WHERE username='$username'

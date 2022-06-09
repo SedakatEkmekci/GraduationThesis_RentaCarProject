@@ -19,7 +19,7 @@
 </head>
 <body>
 <?php 
-  require "functions.php";
+  include ("functions.php");
 ?>
 	<div class="topnav container">
 		<div class="row">	<nav class="navbar navbar-expand-lg navbar-light">

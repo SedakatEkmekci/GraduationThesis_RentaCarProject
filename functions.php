@@ -1,7 +1,7 @@
 <?php
 //Customer id is 0 as default its mean not logged in
 session_start();
-if(!isset($_SESSION['id']))  
+if(!isset($_SESSION['id'])) 
   $_SESSION['id'] = 0;
   //Database Connection
     $conn = mysqli_connect("localhost","root","","rentacar");
