@@ -32,10 +32,6 @@ include ('session.php');
                 <p class="pt-2 pb-2 text-center">
                     <a href="view_cars.php" class="text-decoration-none"><span class="text-dark">View Cars</span></a>
                 </p>
-                <hr class="bg-dark ">
-                <p class="pt-2 pb-2 text-center">
-                    <a href="display_orders.php" class="text-decoration-none"><span class="text-dark">View Orders</span></a>
-                </p>
                 <hr class="bg-dark">
                     <p class="pt-5 text-center">
                         <a href="logout.php" class="btn btn-outline-primary">Logout</a>
