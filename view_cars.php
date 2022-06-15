@@ -4,8 +4,7 @@ include('admin_header.php');
 
           $sql = "SELECT * FROM cars ORDER BY id DESC";
           $res = mysqli_query($conn, $sql);
-
-        
+     
     if(isset($_POST['deleted_car_id']))
     {
         $_sql = "DELETE FROM cars WHERE id = '".$_POST['deleted_car_id']."'";
@@ -13,7 +12,6 @@ include('admin_header.php');
         mysqli_close($conn);
         header("location: view_cars.php");
     }
-
 ?>
 <div class="col-sm-10">
 <!-- The section that will open when the user wants to rent a car -->
@@ -54,7 +52,6 @@ include('admin_header.php');
                         <td>
                             <?=$car['car_price']?>
                         </td>
-                   
                         <td>
                         <br>
                         <form method="POST">
@@ -62,12 +59,8 @@ include('admin_header.php');
                             <button type="submit" name="Delete" class="btn btn-danger viewbtn"> Delete </button>
                         </form>
                         </td>
-                     
-
                     </tr>
-
                     <?php } }?>
-
                 </tbody>
             </table>
         </div>

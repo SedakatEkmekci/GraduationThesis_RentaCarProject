@@ -3,7 +3,6 @@
           $sql = "SELECT * FROM orders ORDER BY id DESC";
           $res = mysqli_query($conn,  $sql);
       ?>
-
       <div class="container order_view bg-light">
           
                <table class="table">
@@ -22,9 +21,7 @@
   <?php 
 
           if (mysqli_num_rows($res) > 0) {
-            while ($order = mysqli_fetch_assoc($res)) {  
-
-  
+            while ($order = mysqli_fetch_assoc($res)) {   
 ?>
   <tr>
       <th scope="row"><?=$order['id']?></th>

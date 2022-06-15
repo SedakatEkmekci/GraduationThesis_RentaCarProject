@@ -14,8 +14,6 @@
 <link rel="stylesheet" type="text/css" href="assets\css\fontawesome\fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-
 </head>
 <body>
 <?php 
@@ -52,9 +50,7 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-      </li>
-      
-       
+      </li> 
           <?php
               } 
       else {
@@ -65,9 +61,7 @@
         <?php
        }
       ?>
-       
-		
-      </ul>
+     </ul>
     </div>
   </div>
 </nav>

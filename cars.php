@@ -4,11 +4,7 @@ include ("header.php");
           $sql = "SELECT * FROM cars ORDER BY id DESC";
           $res = mysqli_query($conn, $sql);
 
-        
-  
-
 ?>
-
 <!-- The section that will open when the user wants to rent a car -->
 <div class="container car_view">
     <!-- The ssection where the cars are shown to the user as a Ttable -->
@@ -54,7 +50,7 @@ include ("header.php");
                         <td>
                         <form action="BuyCar.php" method="POST">
                             <input type="hidden" name="car_id" value="<?php echo $car['id'] ?>">
-                            <button type="submit" name="Buy" class="btn btn-info viewbtn"> BUY </button>
+                            <button type="submit" name="Buy" class="btn btn-info viewbtn"> RENT </button>
                         </form>
                         <br>
                       
